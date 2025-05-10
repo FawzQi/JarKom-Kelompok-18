@@ -1,0 +1,100 @@
+\section{Pendahuluan}
+\subsection{Latar Belakang}
+
+Di era digital saat ini, jaringan komputer memegang peranan vital sebagai infrastruktur utama dalam menunjang komunikasi, pertukaran data, dan akses informasi di berbagai sektor, seperti pendidikan, pemerintahan, dan industri. Oleh karena itu, kemampuan untuk membangun dan mengelola jaringan lokal (LAN) menjadi keahlian yang sangat penting, khususnya di bidang teknologi informasi. Salah satu aspek fundamental dalam pembangunan jaringan meliputi proses crimping kabel jaringan serta konfigurasi routing menggunakan protokol IPv4, yang berfungsi untuk memastikan konektivitas antar perangkat dapat berjalan dengan optimal. Berbagai permasalahan yang sering terjadi, seperti ketidakstabilan koneksi fisik maupun kegagalan komunikasi jaringan, umumnya disebabkan oleh kesalahan pada proses crimping atau pengaturan routing.
+
+Praktikum ini bertujuan untuk memberikan pengalaman langsung dalam menerapkan teknik crimping kabel UTP dan konfigurasi routing IPv4 sebagai langkah solutif terhadap permasalahan konektivitas jaringan. Penguasaan kedua aspek ini tidak hanya penting dari sisi teknis, tetapi juga sangat relevan dengan kebutuhan dunia kerja, khususnya di bidang administrasi jaringan, teknisi IT, serta pengelolaan infrastruktur sistem. Implementasi yang tepat dalam routing dan pembuatan kabel jaringan merupakan dasar yang kokoh dalam pengembangan jaringan berskala besar, termasuk untuk kebutuhan cloud computing, pusat data, hingga sistem berbasis IoT (Internet of Things). Oleh sebab itu, pemahaman mendalam terhadap materi ini menjadi sangat penting bagi calon profesional di dunia teknologi informasi.
+
+\subsection{Dasar Teori}
+Crimping merupakan teknik menyambungkan konektor RJ-45 ke ujung kabel UTP (Unshielded Twisted Pair) dengan menggunakan alat khusus bernama crimping tool. Kabel UTP sendiri terdiri dari delapan kabel tembaga yang dipilin berpasangan dan harus disusun mengikuti standar internasional seperti T568A atau T568B. Penyusunan yang tepat dan akurat sangat penting untuk menjamin kestabilan transmisi data serta meminimalkan gangguan. Jika proses crimping dilakukan secara tidak benar, hal ini dapat menyebabkan koneksi terputus atau menurunkan performa jaringan.
+
+Sementara itu, routing IPv4 adalah proses pengaturan jalur pengiriman data antar jaringan dengan menggunakan protokol Internet Protocol versi 4. Setiap perangkat dalam jaringan diberikan alamat IP yang unik sebagai identitas untuk berkomunikasi. Routing dilakukan oleh perangkat router yang berperan dalam memilih jalur paling efisien untuk mengirimkan paket data. Konfigurasi dapat dilakukan secara statis (manual) atau dinamis menggunakan protokol seperti RIP, OSPF, dan EIGRP. Dalam proses routing, prinsip-prinsip seperti jumlah hop, tabel routing, dan pemilihan jalur (path selection) menjadi dasar untuk memastikan komunikasi antar jaringan berlangsung secara optimal dan andal.
+
+%===========================================================%
+\section{Tugas Pendahuluan}
+\begin{enumerate}
+    \item 
+    \textbf{Perencanaan Alokasi IP Address dan Prefix (CIDR):}
+    
+    Menggunakan jaringan privat 192.168.0.0/24 dan metode VLSM agar efisien, berikut alokasi IP untuk setiap departemen:
+    
+    \begin{itemize}
+        \item \textbf{Departemen R\&D} \\
+        Jumlah perangkat: 100 \\
+        CIDR: /25 \\
+        IP Network: 192.168.0.0/25 \\
+        Rentang IP Host: 192.168.0.1 – 192.168.0.126 \\
+        Broadcast: 192.168.0.127
+        
+        \item \textbf{Departemen Produksi} \\
+        Jumlah perangkat: 50 \\
+        CIDR: /26 \\
+        IP Network: 192.168.0.128/26 \\
+        Rentang IP Host: 192.168.0.129 – 192.168.0.190 \\
+        Broadcast: 192.168.0.191
+        
+        \item \textbf{Departemen Administrasi} \\
+        Jumlah perangkat: 20 \\
+        CIDR: /27 \\
+        IP Network: 192.168.0.192/27 \\
+        Rentang IP Host: 192.168.0.193 – 192.168.0.222 \\
+        Broadcast: 192.168.0.223
+        
+        \item \textbf{Departemen Keuangan} \\
+        Jumlah perangkat: 10 \\
+        CIDR: /28 \\
+        IP Network: 192.168.0.224/28 \\
+        Rentang IP Host: 192.168.0.225 – 192.168.0.238 \\
+        Broadcast: 192.168.0.239
+    \end{itemize}
+    
+    Total subnet yang digunakan: \textbf{4 subnet}. Semua subnet tidak tumpang tindih dan efisien dalam penggunaan IP address.
+
+    \item 
+    \textbf{Topologi Jaringan Sederhana:}
+    
+    \begin{verbatim}
+                             [ Router Utama ]
+                                     |
+           ---------------------------------------------------------
+           |             |                |                     |
+     [R&D Switch]   [Produksi Switch] [Administrasi]       [Keuangan]
+        |                |                |                     |
+     192.168.0.0/25  192.168.0.128/26  192.168.0.192/27    192.168.0.224/28
+    \end{verbatim}
+    
+    Topologi menunjukkan bahwa setiap subnet terhubung ke router utama melalui antarmuka berbeda atau VLAN berbeda.
+
+    \item 
+    \textbf{Tabel Routing Sederhana:}
+    
+    \begin{center}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Network Destination} & \textbf{Prefix} & \textbf{Gateway (Router Interface)} & \textbf{Interface Tujuan} \\
+    \hline
+    192.168.0.0 & /25 & - (directly connected) & Gig0/0 (ke R\&D) \\
+    192.168.0.128 & /26 & - (directly connected) & Gig0/1 (ke Produksi) \\
+    192.168.0.192 & /27 & - (directly connected) & Gig0/2 (ke Administrasi) \\
+    192.168.0.224 & /28 & - (directly connected) & Gig0/3 (ke Keuangan) \\
+    \hline
+    \end{tabular}
+    \end{center}
+
+    \item 
+    \textbf{Jenis Routing yang Paling Cocok:}
+	Static Routing
+    
+    \textbf{Alasan:}
+    \begin{itemize}
+        \item Topologi sederhana hanya melibatkan satu router dan empat subnet.
+        \item Tidak ada perubahan struktur jaringan yang sering terjadi, sehingga konfigurasi manual tetap efektif.
+        \item Static routing lebih efisien secara sumber daya (CPU/memori) dan aman karena tidak membuka jalur pertukaran routing otomatis.
+        \item Konfigurasi mudah dan cocok untuk skala perusahaan kecil-menengah.
+    \end{itemize}
+
+    \textbf{Alternatif (jika jaringan bertambah besar):} Dynamic Routing dengan
+	OSPF (Open Shortest Path First) dapat dipertimbangkan karena mendukung VLSM
+	(Variable Length Subnet Mask) dan efisien untuk skala besar. Routing berbasis
+	CIDR sudah diterapkan untuk efisiensi alokasi IP.
+\end{enumerate}

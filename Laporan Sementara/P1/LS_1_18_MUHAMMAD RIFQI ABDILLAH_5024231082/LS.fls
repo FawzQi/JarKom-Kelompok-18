@@ -1,6 +1,6 @@
-PWD e:\Kuliah\JarKom\JarKom-Kelompok-18\Laporan Sementara\P1\5024231032_Ahmad Faiq Fawwaz_P1
+PWD e:\Kuliah\JarKom\JarKom-Kelompok-18\Laporan Sementara\P1\LS_1_18_MUHAMMAD RIFQI ABDILLAH_5024231082
 INPUT C:\Users\MSI-GF63\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Kuliah\JarKom\JarKom-Kelompok-18\Laporan Sementara\P1\5024231032_Ahmad Faiq Fawwaz_P1\LS.tex
+INPUT e:\Kuliah\JarKom\JarKom-Kelompok-18\Laporan Sementara\P1\LS_1_18_MUHAMMAD RIFQI ABDILLAH_5024231082\LS.tex
 OUTPUT LS.log
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -8,6 +8,8 @@ INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\tools\indentfirst.sty
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\comment\comment.sty
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\comment\comment.sty
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
@@ -308,33 +310,29 @@ INPUT P1\crimping.tex
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvb.tfm
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT .\miot.png
-INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qhvr.tfm
-INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
-INPUT .\P1\img\image.png
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qhv.fd
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qhv.fd
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ts1qhv.fd
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ts1-qhvr.tfm
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT .\miot.png
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ts1.enc
 INPUT LS.aux
 INPUT .\LS.out
 INPUT .\LS.out
 INPUT LS.run.xml
 OUTPUT LS.run.xml
+INPUT C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
+INPUT C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvb.pfb
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvb.pfb
 INPUT C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qhvbi.pfb

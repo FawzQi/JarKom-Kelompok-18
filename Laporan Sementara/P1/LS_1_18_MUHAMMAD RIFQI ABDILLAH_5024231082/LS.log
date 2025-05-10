@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  9 MAY 2025 03:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  10 MAY 2025 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P1/5024231032_Ahmad Faiq Fawwaz_P1/LS.tex"
-(e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P1/5024231032_Ahmad Faiq Fawwaz_P1/LS.tex
+**"e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P1/LS_1_18_MUHAMMAD RIFQI ABDILLAH_5024231082/LS.tex"
+(e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P1/LS_1_18_MUHAMMAD RIFQI ABDILLAH_5024231082/LS.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
 (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -23,6 +23,8 @@ File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
+) (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
  Excluding comment 'comment') (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
@@ -632,30 +634,30 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count438
 \@quotereset=\count439
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 88.
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 89.
 (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 ) (LS.aux)
 \openout1 = `LS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 \c@lstlisting=\count440
  (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -686,7 +688,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 88.
+Package hyperref Info: Link coloring ON on input line 89.
  (LS.out) (LS.out)
 \@outlinefile=\write5
 \openout5 = `LS.out'.
@@ -730,7 +732,7 @@ Package biblatex Info: Trying to load language 'bahasa'...
 Package biblatex Info: ... file 'bahasa.lbx' not found.
 
 Package biblatex Warning: Language 'bahasa' not supported.
-(biblatex)                Using dummy definitions on input line 88.
+(biblatex)                Using dummy definitions on input line 89.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -740,8 +742,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'LS.bbl' found.
 (LS.bbl)
-Package biblatex Info: Reference section=0 on input line 88.
-Package biblatex Info: Reference segment=0 on input line 88.
+Package biblatex Info: Reference section=0 on input line 89.
+Package biblatex Info: Reference segment=0 on input line 89.
  (Cover/Header.tex
 File: Cover/img/logodepart.png Graphic file (type png)
 <use Cover/img/logodepart.png>
@@ -760,107 +762,27 @@ Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
 
 
 {C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc} <./Cover/img/logodepart.png> <./Cover/img/miot.png> <./Cover/img/footer.png>]) (P1/crimping.tex
+LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 22.
+ (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qhv.fd
+File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
+)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.8 
-    
+l.28 
+     
 <miot.png, id=34, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
-Package pdftex.def Info: miot.png  used on input line 8.
+Package pdftex.def Info: miot.png  used on input line 28.
 (pdftex.def)             Requested size: 238.9995pt x 239.01491pt.
  [1
 
  <./miot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
-[]|\T1/qhv/b/n/10 Prefix (CI-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--21
-[]|\T1/qhv/m/n/10 192.168.1.0 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-[]|\T1/qhv/m/n/10 192.168.4.0 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
-[]|\T1/qhv/m/n/10 192.168.4.32 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]|\T1/qhv/m/n/10 192.168.0.0 -
- []
-
-<P1/img/image.png, id=39, 939.51pt x 533.995pt>
-File: P1/img/image.png Graphic file (type png)
-<use P1/img/image.png>
-Package pdftex.def Info: P1/img/image.png  used on input line 33.
-(pdftex.def)             Requested size: 386.95897pt x 219.93343pt.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-[]|\T1/qhv/m/n/10 192.168.4.0/27,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
-\T1/qhv/m/n/10 192.168.4.32/28,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-[]|\T1/qhv/m/n/10 192.168.1.0/26,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
-\T1/qhv/m/n/10 192.168.4.32/28,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\T1/qhv/m/n/10 192.168.1.0/26,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-\T1/qhv/m/n/10 192.168.4.0/27,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-\T1/qhv/m/n/10 192.168.4.32/28,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-[]|\T1/qhv/m/n/10 192.168.1.0/26,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--49
-\T1/qhv/m/n/10 192.168.4.0/27,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-[]|\T1/qhv/m/n/10 192.168.1.0/26,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-\T1/qhv/m/n/10 192.168.4.0/27,
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+qhv on input line 59.
-(C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qhv.fd
-File: ts1qhv.fd 2009/09/25 v1.2 font definition file for TS1/qhv
-) [3{C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./P1/img/image.png (PNG copy)>]) [4] (LS.aux)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 56.
+ (C:\Users\MSI-GF63\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [2{C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]) [3] (LS.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -872,17 +794,17 @@ Package logreq Info: Writing requests to 'LS.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21410 strings out of 474370
- 374834 string characters out of 5739119
- 1941754 words of memory out of 5000000
- 43526 multiletter control sequences out of 15000+600000
- 604904 words of font info for 66 fonts, out of 8000000 for 9000
+ 21423 strings out of 474370
+ 375813 string characters out of 5739119
+ 1939754 words of memory out of 5000000
+ 43536 multiletter control sequences out of 15000+600000
+ 601767 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,2716b,684s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LS.pdf (5 pages, 342943 bytes).
+ 75i,12n,81p,1249b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on LS.pdf (4 pages, 162587 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
