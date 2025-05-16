@@ -1,0 +1,128 @@
+\section{Pendahuluan}
+\subsection{Latar Belakang}
+Seiring dengan pertumbuhan pesat teknologi informasi dan komunikasi, jumlah perangkat yang terhubung ke internet meningkat secara signifikan, mulai dari komputer, smartphone, hingga perangkat berbasis Internet of Things (IoT). Pertumbuhan ini menimbulkan kebutuhan akan sistem pengalamatan IP yang lebih luas dan efisien. Protokol IPv4 yang telah digunakan sejak awal pengembangan internet hanya menyediakan sekitar 4,3 miliar alamat IP yang kini hampir seluruhnya habis digunakan. Untuk mengatasi keterbatasan tersebut, dikembangkanlah Internet Protocol version 6 (IPv6) sebagai solusi masa depan yang lebih andal dan skalabel. IPv6 tidak hanya menyediakan ruang alamat yang sangat besar, yaitu sebesar 128-bit (setara dengan 340 undecillion alamat), tetapi juga menghadirkan berbagai fitur baru yang lebih optimal untuk jaringan modern. Beberapa di antaranya adalah struktur header yang lebih efisien, kemampuan autokonfigurasi alamat (SLAAC), tidak perlunya Network Address Translation (NAT), serta keamanan yang lebih baik melalui penerapan IPsec secara native. Dalam konteks pengelolaan jaringan, kemampuan routing dan manajemen jaringan IPv6 menjadi sangat penting agar komunikasi data antar perangkat dapat berlangsung dengan lancar, efisien, dan aman. Oleh karena itu, pemahaman konsep routing dan manajemen jaringan IPv6 menjadi bagian penting dalam pendidikan jaringan komputer, khususnya agar mahasiswa mampu mengelola dan mengonfigurasi jaringan dengan baik menggunakan protokol modern ini.
+
+\subsection{Dasar Teori}
+Internet Protocol version 6 (IPv6) adalah protokol jaringan layer ke-3 (network layer) yang dikembangkan oleh IETF untuk menggantikan IPv4. IPv6 menggunakan panjang alamat 128-bit yang dituliskan dalam format heksadesimal yang dipisahkan oleh tanda titik dua (:). Contoh penulisan alamat IPv6 adalah 2001:0db8:85a3:0000:0000:8a2e:0370:7334, yang dalam praktiknya dapat disederhanakan menjadi 2001:db8:85a3::8a2e:370:7334 dengan menghilangkan angka nol yang berulang. Dengan kapasitas ruang alamat yang sangat besar, IPv6 memungkinkan pengalamatan unik untuk setiap perangkat di dunia tanpa perlu menggunakan teknik translasi alamat seperti NAT. Routing IPv6 adalah proses penerusan paket dari satu jaringan ke jaringan lain dengan memanfaatkan tabel routing yang berisi informasi arah rute berdasarkan alamat tujuan. Routing ini dapat diklasifikasikan menjadi dua jenis, yaitu routing statik dan routing dinamik. Routing statik adalah metode di mana administrator secara manual mengonfigurasi rute antar jaringan, cocok untuk topologi sederhana namun kurang fleksibel jika terjadi perubahan. Sementara itu, routing dinamik menggunakan protokol khusus seperti OSPFv3 (Open Shortest Path First for IPv6), RIPng (Routing Information Protocol Next Generation), dan BGP (Border Gateway Protocol) untuk secara otomatis menyesuaikan rute berdasarkan kondisi jaringan. Dalam pengelolaan jaringan IPv6, terdapat juga peran penting dari protokol ICMPv6 (Internet Control Message Protocol for IPv6) yang digunakan dalam proses deteksi tetangga (Neighbor Discovery Protocol/NDP), pengiriman pesan kesalahan, dan pengaturan Router Advertisement (RA) yang memungkinkan perangkat mengonfigurasi alamat IP-nya secara otomatis melalui SLAAC (Stateless Address Autoconfiguration). Dengan memahami konsep dasar ini, seorang administrator jaringan dapat menerapkan konfigurasi routing dan manajemen jaringan berbasis IPv6 secara efisien dan efektif dalam lingkungan dunia nyata.
+%===========================================================%
+\section{Tugas Pendahuluan}
+\begin{enumerate}
+	\item \textbf{Penjelasan tentang IPv6 dan perbedaannya dengan IPv4}
+
+	IPv6 (Internet Protocol version 6) adalah versi terbaru dari protokol internet yang dirancang untuk menggantikan IPv4. IPv6 menyediakan ruang alamat yang jauh lebih besar, meningkatkan efisiensi routing, keamanan, serta dukungan mobilitas.
+
+	% \begin{table}[h!]
+	% 	\centering
+	% 	\begin{tabular}{|c|c|c|}
+	% 		\hline
+	% 		\textbf{Fitur} & \textbf{IPv4} & \textbf{IPv6} \\
+	% 		\hline
+	% 		Panjang alamat & 32 bit & 128 bit \\
+	% 		Format alamat & Desimal (192.168.0.1) & Heksadesimal (2001:db8::1) \\
+	% 		Jumlah alamat & \(\sim 4{,}3 \times 10^9\) & \(\sim 3{,}4 \times 10^{38}\) \\
+	% 		NAT & Digunakan luas & Tidak diperlukan \\
+	% 		Keamanan & Opsional & IPSec wajib \\
+	% 		Konfigurasi & Manual/DHCP & Autokonfigurasi/DHCPv6 \\
+	% 		Header & Kompleks & Sederhana dan efisien \\
+	% 		\hline
+	% 	\end{tabular}
+	% 	\caption{Perbandingan IPv4 dan IPv6}
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|p{4cm}|p{5.2cm}|p{5.2cm}|}
+			\hline
+			\textbf{Fitur} & \textbf{IPv6} & \textbf{IPv4} \\
+			\hline
+			Panjang Alamat & 128-bit & 32-bit \\
+			\hline
+			Konfigurasi Alamat & Mendukung konfigurasi otomatis \& penomoran ulang & Mendukung konfigurasi manual dan via DHCP \\
+			\hline
+			 Jumlah alamat & \(\sim 3{,}4 \times 10^{38}\) &  \(\sim 4{,}3 \times 10^9\)\\
+	\hline
+
+			Format Alamat & Heksadesimal & Desimal \\
+			\hline
+			Checksum & Tidak tersedia & Tersedia \\
+			\hline
+			Ukuran Header & Tetap 40 byte & Bervariasi 20–60 byte \\
+			\hline
+			Dukungan VLSM & Tidak mendukung VLSM & Mendukung VLSM \\
+			\hline	
+		\end{tabular}
+		\caption{Perbandingan IPv4 dan IPv6}
+	\end{table}
+
+	\item \textbf{Pembagian blok alamat IPv6 dan alokasi subnet}
+
+	Organisasi menerima blok alamat IPv6 sebesar \(2001:db8::/32\). Blok ini dapat dibagi menjadi beberapa subnet /64. Maka pembagian empat subnet /64 dapat dilakukan sebagai berikut:
+
+	\begin{itemize}
+		\item Subnet A: \(2001:db8:0:1::/64\)
+		\item Subnet B: \(2001:db8:0:2::/64\)
+		\item Subnet C: \(2001:db8:0:3::/64\)
+		\item Subnet D: \(2001:db8:0:4::/64\)
+	\end{itemize}
+
+	\item \textbf{Penentuan alamat antarmuka router dan konfigurasi IP}
+
+	Router menghubungkan keempat subnet melalui empat antarmuka:
+	\begin{itemize}
+		\item ether1 (Subnet A): \(2001:db8:0:1::1/64\)
+		\item ether2 (Subnet B): \(2001:db8:0:2::1/64\)
+		\item ether3 (Subnet C): \(2001:db8:0:3::1/64\)
+		\item ether4 (Subnet D): \(2001:db8:0:4::1/64\)
+	\end{itemize}
+
+	% Konfigurasi IP address IPv6 pada router (dengan sintaks Mikrotik) dapat dirangkum dalam tabel berikut:
+
+	% \begin{table}[h!]
+	% 	\centering
+	% 	\begin{tabular}{|c|c|c|}
+	% 		\hline
+	% 		\textbf{Interface} & \textbf{Alamat IPv6} & \textbf{Advertise} \\
+	% 		\hline
+	% 		ether1 & \(2001:db8:0:1::1/64\) & Yes \\
+	% 		ether2 & \(2001:db8:0:2::1/64\) & Yes \\
+	% 		ether3 & \(2001:db8:0:3::1/64\) & Yes \\
+	% 		ether4 & \(2001:db8:0:4::1/64\) & Yes \\
+	% 		\hline
+	% 	\end{tabular}
+	% 	\caption{Konfigurasi IP Address IPv6 pada Router}
+	% \end{table}
+
+	\item \textbf{Daftar IP Table routing statis agar subnet saling terhubung}
+
+	Dalam jaringan ini, subnet-subnet terhubung langsung ke router, sehingga biasanya sistem akan membuat \textit{connected route} secara otomatis. Namun, jika ingin dituliskan eksplisit, konfigurasi rute statis dapat dirangkum dalam tabel berikut:
+
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Destination Address} & \textbf{Gateway} \\
+			\hline
+			\(2001:db8:0:1::/64\) & ether1 \\
+			\(2001:db8:0:2::/64\) & ether2 \\
+			\(2001:db8:0:3::/64\) & ether3 \\
+			\(2001:db8:0:4::/64\) & ether4 \\
+			\hline
+		\end{tabular}
+		\caption{Konfigurasi Rute Statis IPv6 pada Router}
+	\end{table}
+
+	\item \textbf{Fungsi routing statis pada jaringan IPv6 dan kapan digunakan}
+
+	Routing statis adalah metode di mana administrator secara manual menentukan rute menuju jaringan tertentu. Fungsi utamanya adalah:
+	\begin{itemize}
+		\item Mengontrol jalur lalu lintas secara presisi
+		\item Mengurangi overhead dibanding protokol routing dinamis
+		\item Menambah keamanan dan keandalan
+	\end{itemize}
+
+	Routing statis cocok digunakan pada:
+	\begin{itemize}
+		\item Jaringan kecil atau topologi sederhana
+		\item Lingkungan dengan sedikit perubahan jaringan
+	\end{itemize}
+
+	Sebaliknya, pada jaringan besar yang kompleks dan sering berubah, sebaiknya menggunakan routing dinamis seperti OSPFv3, IS-IS, atau BGP.
+\end{enumerate}
