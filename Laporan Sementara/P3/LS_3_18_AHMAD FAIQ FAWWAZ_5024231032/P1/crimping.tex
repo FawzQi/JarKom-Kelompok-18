@@ -1,15 +1,30 @@
+% materi jaringan wireless
+
 \section{Pendahuluan}
+
+\section{Pendahuluan}
+
 \subsection{Latar Belakang}
-Bagian ini menjelaskan alasan dilaksanakannya praktikum, termasuk pentingnya topik yang dibahas. Latar belakang mencantumkan permasalahan yang ingin diselesaikan, urgensi pembelajaran topik, serta keterkaitannya dengan aplikasi dunia nyata atau teknologi saat ini.
+Seiring dengan pesatnya perkembangan teknologi informasi dan komunikasi, kebutuhan akan akses jaringan yang cepat, fleksibel, dan mudah diimplementasikan semakin meningkat, terutama di era digital yang menuntut konektivitas tinggi dan mobilitas pengguna. Salah satu solusi yang menjawab kebutuhan tersebut adalah jaringan nirkabel (wireless network), yang memungkinkan perangkat terhubung tanpa kabel fisik. Kemampuan ini memberikan kemudahan dalam instalasi, penghematan biaya infrastruktur, serta fleksibilitas tinggi dalam pemindahan dan penambahan perangkat. Dibandingkan jaringan kabel (wired), jaringan wireless lebih mudah diterapkan pada lingkungan dinamis seperti perkantoran modern, fasilitas pendidikan, area publik, dan rumah tangga. Praktikum jaringan wireless ini bertujuan untuk memberikan pemahaman praktis dan teknis mengenai konsep, konfigurasi, serta pemecahan masalah jaringan nirkabel, sehingga mahasiswa tidak hanya memahami teori, tetapi juga mampu menerapkannya dalam situasi nyata. Dengan memahami cara kerja perangkat seperti access point, router wireless, dan metode keamanan jaringan, mahasiswa akan lebih siap dalam menghadapi tantangan pengelolaan jaringan wireless di berbagai skenario, termasuk dalam pengembangan sistem berbasis Internet of Things (IoT) dan smart environment. Pemahaman ini juga krusial karena jaringan wireless sangat rentan terhadap gangguan sinyal dan ancaman keamanan, sehingga diperlukan pemahaman menyeluruh untuk merancang jaringan yang handal, aman, dan efisien.
 
 \subsection{Dasar Teori}
-Bagian ini memuat teori-teori dasar yang mendukung pelaksanaan praktikum. Penjelasan mencakup konsep teknis, nama istilah, serta prinsip ilmiah yang relevan. Tujuannya adalah untuk memberikan pemahaman mendalam sebelum praktikum dilakukan.
+Jaringan wireless adalah sistem komunikasi data yang memungkinkan pertukaran informasi antar perangkat melalui media udara tanpa menggunakan kabel fisik, dengan memanfaatkan gelombang radio atau inframerah sebagai media transmisi. Standar paling umum dalam jaringan wireless adalah IEEE 802.11 (Wi-Fi), namun juga terdapat standar lain seperti Bluetooth, Zigbee, dan jaringan seluler (LTE/5G), tergantung kebutuhan komunikasi dan cakupan wilayah. Teknologi wireless memberikan keuntungan dalam hal kemudahan instalasi, mobilitas, serta fleksibilitas dalam penataan infrastruktur jaringan. Dalam jaringan ini, terdapat sejumlah komponen penting, di antaranya: \textbf{Access Point (AP)} sebagai penghubung antara perangkat klien dan jaringan lokal; \textbf{Router Wireless} yang berfungsi mengatur lalu lintas data serta menyediakan koneksi internet secara nirkabel; dan \textbf{Modem} yang menghubungkan jaringan lokal ke penyedia layanan internet. Selain itu, identitas jaringan ditentukan oleh \textbf{SSID (Service Set Identifier)}, sementara aspek keamanan dijaga melalui metode enkripsi seperti \textbf{WPA2} atau \textbf{WPA3}, dan juga dapat ditingkatkan dengan filter MAC Address serta firewall. Meski memiliki banyak keunggulan, jaringan wireless memiliki tantangan seperti gangguan interferensi sinyal dari perangkat lain, keterbatasan jangkauan, serta potensi keamanan yang lebih rentan dibanding jaringan kabel. Oleh karena itu, perencanaan dan konfigurasi jaringan wireless harus mempertimbangkan lokasi fisik, pengaturan kanal frekuensi, dan pengamanan untuk menjamin kualitas dan kehandalan jaringan yang optimal.
 
 %===========================================================%
 \section{Tugas Pendahuluan}
 Bagian ini berisi jawaban dari tugas pendahuluan yang telah anda kerjakan, beserta penjelasan dari jawaban tersebut
 \begin{enumerate}
-	\item jawaban
-	\item jawaban
-	\item jawaban
+	\item \textbf{Jelaskan apa yang lebih baik, jaringan wired atau jaringan wireless?} \\
+	Kedua jenis jaringan memiliki kelebihan dan kekurangan masing-masing, sehingga "lebih baik" tergantung pada konteks penggunaannya. Jaringan \textbf{wired} menawarkan kecepatan dan stabilitas yang lebih tinggi serta tingkat keamanan yang lebih baik, cocok untuk lingkungan dengan kebutuhan bandwidth besar seperti pusat data atau jaringan perusahaan. Sementara itu, jaringan \textbf{wireless} unggul dalam hal fleksibilitas, mobilitas, dan kemudahan instalasi, sehingga cocok digunakan pada lingkungan rumah, perkantoran, atau tempat umum. Oleh karena itu, kombinasi keduanya sering digunakan dalam praktik (hybrid network) untuk menggabungkan kelebihan masing-masing.
+
+	\item \textbf{Apa perbedaan antara router, access point, dan modem?} \\
+	\begin{itemize}
+		\item \textbf{Router} adalah perangkat yang bertugas mengatur lalu lintas data antar jaringan. Router menghubungkan jaringan lokal (LAN) dengan jaringan lain seperti internet.
+		\item \textbf{Access Point (AP)} adalah perangkat yang menyediakan akses jaringan wireless ke perangkat klien, dan biasanya terhubung ke jaringan kabel untuk memperluas jangkauan Wi-Fi.
+		\item \textbf{Modem} adalah perangkat yang mengubah sinyal digital dari komputer menjadi sinyal analog yang bisa dikirimkan melalui jalur telepon atau sebaliknya, sehingga memungkinkan koneksi ke penyedia layanan internet (ISP).
+	\end{itemize}
+	Sering kali dalam rumah tangga, modem dan router digabung dalam satu perangkat yang juga memiliki fitur access point.
+
+	\item \textbf{Jika kamu diminta menghubungkan dua ruangan di gedung berbeda tanpa menggunakan kabel, perangkat apa yang kamu pilih? Jelaskan alasannya.} \\
+	Perangkat yang saya pilih adalah \textbf{wireless bridge} atau \textbf{wireless point-to-point (PtP)}. Perangkat ini memungkinkan koneksi antar dua lokasi secara nirkabel dengan kecepatan dan stabilitas yang tinggi, menggunakan antena directional untuk memfokuskan sinyal. Alternatif lainnya adalah menggunakan \textbf{range extender} atau \textbf{mesh Wi-Fi system} jika jarak tidak terlalu jauh dan tidak ada banyak halangan fisik. Pemilihan wireless bridge menjadi pilihan terbaik karena didesain untuk menghubungkan dua jaringan LAN secara langsung tanpa kabel fisik.
 \end{enumerate}

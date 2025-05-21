@@ -1,11 +1,105 @@
 \section{Langkah-Langkah Percobaan}
-Bagian ini menjelaskan secara rinci tahapan atau prosedur yang dilakukan selama praktikum. Langkah-langkah ditulis secara urut dan sistematis, mulai dari persiapan alat hingga pelaksanaan percobaan. Penulisan harus jelas agar dapat dipahami oleh orang lain yang membaca laporan ini.
+Pada modul P2 ini, praktikan melakukan \textbf{Routing \& Manajemen IPv6} dengan percobaan untuk melakukan \textbf{routing statis dan dinamis} pada IPv6.
+
+\subsection{Routing Statis}
+Dalam routing statis, langkah-langkah yang dilakukan adalah sebagai berikut:
+\begin{enumerate}
+    \item Mempersiapkan alat dan bahan yang dibutuhkan.
+    \item Menghubungkan router dan laptop sesuai skema topologi yang ada pada modul.
+    \item Mengkonfigurasikan router masing-masing.
+    \item Mereset router untuk menghapus konfigurasi yang ada.
+    \item Login ke router menggunakan Winbox, kemudian konfigurasi IP address pada interface router:
+    \begin{itemize}
+        \item IP \texttt{ether1} Router A: \texttt{2001:db8:1::1/64}
+        \item IP \texttt{ether1} Router B: \texttt{2001:db8:1::2/64}
+        \item IP \texttt{ether2} Router A: \texttt{2001:db8:a::1/64}
+        \item IP \texttt{ether2} Router B: \texttt{2001:db8:b::1/64}
+    \end{itemize}
+    \item Mengatur IP Address statis pada laptop masing-masing yang terhubung ke Router A dan Router B:
+    \begin{itemize}
+        \item Laptop A:
+        \begin{itemize}
+            \item IP Address: \texttt{2001:db8:a::100/64}
+            \item Gateway: \texttt{2001:db8:a::1}
+            \item DNS: \texttt{2001:4860:4860::8888}
+        \end{itemize}
+        \item Laptop B:
+        \begin{itemize}
+            \item IP Address: \texttt{2001:db8:b::100/64}
+            \item Gateway: \texttt{2001:db8:b::1}
+            \item DNS: \texttt{2001:4860:4860::8888}
+        \end{itemize}
+    \end{itemize}
+    \item Melakukan uji koneksi dengan ping dari Router A ke Router B, serta dari masing-masing laptop ke router dan laptop lainnya.
+\end{enumerate}
+
+\subsection{Routing Dinamis}
+Untuk routing dinamis, pada praktikum kemarin kelompok kami belum berhasil melakukan konfigurasi karena terdapat kendala saat konfigurasi router, kesalahan perangkat, atau kesalahan praktikan. Namun, berdasarkan modul, langkah-langkah routing dinamis adalah sebagai berikut:
+
+\begin{enumerate}
+    \item Mempersiapkan alat dan bahan yang dibutuhkan.
+    \item Menghubungkan router dan laptop sesuai topologi pada modul.
+    \item Melakukan konfigurasi IP address pada masing-masing interface router seperti pada langkah routing statis.
+    \item Masuk ke menu \texttt{IPv6 > Routing > OSPFv3 > Instances}, lalu klik \texttt{+} untuk menambahkan instance OSPF.
+    \begin{itemize}
+        \item Name: \texttt{ospf-instance}
+        \item Router ID: \texttt{1.1.1.1} (untuk Router A) dan \texttt{2.2.2.2} (untuk Router B)
+    \end{itemize}
+    \item Tambahkan Area OSPF di menu \texttt{OSPFv3 > Areas}:
+    \begin{itemize}
+        \item Name: \texttt{backbone}
+        \item Area ID: \texttt{0.0.0.0}
+        \item Instance: \texttt{ospf-instance}
+    \end{itemize}
+    \item Tambahkan Interface pada OSPFv3:
+    \begin{itemize}
+        \item Router A: \texttt{ether1} dan \texttt{ether2}
+        \item Router B: \texttt{ether1} dan \texttt{ether2}
+    \end{itemize}
+    \item Cek Neighbor pada menu \texttt{OSPFv3 > Neighbors}, pastikan tetangga antar router terdeteksi.
+    \item Cek rute dinamis yang muncul pada \texttt{IPv6 > Routes}.
+    \item Lakukan uji ping dari Router A ke LAN Router B, serta dari Laptop A ke Laptop B untuk memastikan konektivitas.
+\end{enumerate}
+
+
+
 
 \section{Analisis Hasil Percobaan}
-Berisi pembahasan terhadap hasil yang diperoleh selama praktikum. Analisis dilakukan dengan membandingkan hasil percobaan terhadap teori, serta mengidentifikasi faktor-faktor yang memengaruhi hasil, seperti kesalahan alat atau langkah percobaan. Tujuan bagian ini adalah untuk mengevaluasi keberhasilan percobaan dan memastikan pemahaman praktikan terkait praktikum yang telah dilaksanakan.
+Berdasarkan hasil praktikum P2 yang telah dilakukan, konfigurasi \textbf{routing statis IPv6} berhasil dilaksanakan dengan baik. Setelah melakukan konfigurasi IP pada masing-masing interface router dan laptop, serta menetapkan gateway dan DNS dengan benar, konektivitas antar perangkat dapat diuji menggunakan perintah \texttt{ping}. Hasil pengujian menunjukkan bahwa laptop yang terhubung ke Router A berhasil mengirim \texttt{ping} ke laptop yang terhubung ke Router B, menunjukkan bahwa rute statis yang ditetapkan bekerja dengan baik. Hal ini sesuai dengan teori dasar routing statis, yaitu penggunaan konfigurasi manual untuk menentukan jalur antar jaringan.
+
+Namun, pada saat implementasi \textbf{routing dinamis IPv6} menggunakan OSPFv3, kelompok kami belum berhasil mencapai hasil yang diharapkan. Beberapa kemungkinan penyebab kegagalan tersebut antara lain:
+\begin{itemize}
+    \item Kesalahan konfigurasi pada saat penentuan instance OSPF atau pemilihan interface.
+    \item Perangkat (router) yang digunakan mungkin mengalami kendala atau bug yang menyebabkan OSPFv3 tidak berjalan sebagaimana mestinya.
+    \item Kurangnya pemahaman praktikan dalam menyesuaikan parameter routing dinamis dengan struktur topologi yang ada.
+\end{itemize}
+
+Kendala tersebut mengakibatkan OSPFv3 tidak berhasil membentuk hubungan \textit{neighbor} antar router, sehingga tidak terjadi pertukaran informasi routing. Hal ini dapat dibuktikan dari tidak munculnya rute dinamis di tabel \texttt{IPv6 > Routes} serta gagalnya \texttt{ping} antar LAN laptop. Meskipun demikian, praktikan memperoleh pemahaman yang lebih dalam mengenai prinsip dasar konfigurasi routing statis dan dinamika konfigurasi routing dinamis, serta pentingnya penyesuaian parameter dan pengecekan setiap langkah konfigurasi.
 
 \section{Hasil Tugas Modul}
-Bagian ini memuat hasil dari pengerjaan tugas tambahan yang diberikan dalam modul praktikum serta penjelasan dari jawaban tersebut. 
+Berdasarkan tugas yang tercantum dalam modul, praktikan diminta untuk melakukan simulasi konfigurasi Routing Dinamis dan Statis IPv6 menggunakan perangkat lunak \textbf{GNS3}. Berikut adalah hasil simulasi:
+
+\subsection{Simulasi Routing Statis IPv6 di GNS3}
+Pada simulasi routing statis, dua router virtual (misalnya Cisco IOSv) dihubungkan satu sama lain serta ke masing-masing perangkat klien (VM atau host di GNS3). Setiap router dikonfigurasi dengan IP address IPv6 pada interface antar-router dan interface ke LAN, lalu ditambahkan rute statis menggunakan perintah seperti:
+\begin{verbatim}
+ipv6 route 2001:db8:b::/64 2001:db8:1::2
+\end{verbatim}
+Hasil simulasi menunjukkan bahwa \texttt{ping} dari host A ke host B berhasil, menandakan rute telah dikonfigurasi dengan benar.
+
+\subsection{Simulasi Routing Dinamis IPv6 di GNS3 dengan OSPFv3}
+Untuk routing dinamis, protokol OSPFv3 digunakan dengan konfigurasi berikut:
+\begin{verbatim}
+ipv6 unicast-routing
+interface <interface>
+ ipv6 enable
+ ipv6 ospf 1 area 0
+router ospf 1
+ router-id 1.1.1.1
+\end{verbatim}
+Langkah-langkah ini diterapkan pada kedua router dengan router ID yang berbeda. Setelah konfigurasi selesai, hasil pengujian menunjukkan bahwa rute dinamis berhasil terdeteksi di masing-masing router, dan \texttt{ping} antar host berhasil dilakukan. Neighbor OSPF juga terbentuk dengan baik, menunjukkan bahwa protokol routing dinamis bekerja sesuai teori.
+
+\subsection{Kesimpulan Simulasi}
+Simulasi di GNS3 berhasil menunjukkan bahwa baik routing statis maupun dinamis IPv6 dapat dikonfigurasi dan berjalan dengan baik jika semua langkah dilakukan dengan tepat. Simulasi ini juga membantu praktikan memahami proses routing pada level protokol dan pengaruh konfigurasi antarmuka serta pengaturan OSPFv3 terhadap pembentukan jalur dinamis antar jaringan.
 
 \section{Kesimpulan}
 Kesimpulan berisi ringkasan dari hasil praktikum dan hal-hal penting yang didapatkan. Bagian ini menjawab tujuan praktikum, mencantumkan hasil yang sesuai atau tidak sesuai dengan teori, serta pembelajaran yang diperoleh oleh praktikan.
