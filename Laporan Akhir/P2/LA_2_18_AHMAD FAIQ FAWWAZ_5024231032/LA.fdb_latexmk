@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LA"] 1747626804.11692 "LA.bcf" "LA.bbl" "LA" 1747633124.45013 2
-  "LA.bcf" 1747633124 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LA"] 1748006976.98976 "LA.bcf" "LA.bbl" "LA" 1748009032.68228 0
+  "LA.bcf" 1748009032 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LA.bbl"
   "LA.blg"
   (rewritten before read)
-["pdflatex"] 1747633122.55143 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P2/LA_2_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" "LA.pdf" "LA" 1747633124.45081 0
+["pdflatex"] 1748009030.82781 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P2/LA_2_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" "LA.pdf" "LA" 1748009032.68285 0
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1747529242 124670 95f85dbf99ed9a1d38df8b5df5571d53 ""
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1727095178 21972 311e84e3e5ce951679442902496ea6c1 ""
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1716438020 24241770 e23d51d3d015ea48e33d81e880041b4c ""
@@ -137,13 +137,23 @@
   "Cover/img/footer.png" 1746453791 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746453791 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LA.aux" 1747633124 1939 96cce276d9f1bcc960486f53f14b1885 "pdflatex"
-  "LA.bbl" 1747626810 0 d41d8cd98f00b204e9800998ecf8427e "biber LA"
-  "LA.out" 1747633124 2019 4b13ba909b820615a5129f578dbb3abb "pdflatex"
-  "LA.run.xml" 1747633124 2276 7e7737baf1ca4036fb9a56342306cac1 "pdflatex"
-  "LA.tex" 1746453791 2826 65ac982c14e214e5563c8c4498dd5447 ""
-  "P1/crimping.tex" 1747633113 7926 1bc1677c7d3c20780a0e995640347b5e ""
-  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P2/LA_2_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" 1746453791 2826 65ac982c14e214e5563c8c4498dd5447 ""
+  "LA.aux" 1748009032 4058 3b6fed140ddd776088b4394eaa4bcf93 "pdflatex"
+  "LA.bbl" 1748006983 0 d41d8cd98f00b204e9800998ecf8427e "biber LA"
+  "LA.out" 1748009032 2011 bebdba2ecdf5efa84f1f370f8272cdf7 "pdflatex"
+  "LA.run.xml" 1748009032 2276 7e7737baf1ca4036fb9a56342306cac1 "pdflatex"
+  "LA.tex" 1748009028 2830 9756a10cdb44086ec52474f43acacf2c ""
+  "P1/crimping.tex" 1748008916 11760 24a0e3978ccd3a1fba53af80b7a272f4 ""
+  "P1/img/dokum1.png" 1747452656 62661 37b24d3e51ca13cf8bff23af10e79252 ""
+  "P1/img/dokum2.png" 1747452817 69057 6c8422a113b19b6f47619a349e8e2a38 ""
+  "P1/img/dokum3.png" 1747453315 42664 a8f4988d40e744e4d792bd650ac765f8 ""
+  "P1/img/dokum4.png" 1747454127 13295 4b3b3cbbd42e5c1f8bf596daf1d22586 ""
+  "P1/img/dokum5.png" 1747454743 15221 e10e1595fce1472c837ec132f11d9d47 ""
+  "P1/img/tumodsimulasi.png" 1747902780 40231 c61ccf6e596817cc8cea526d5179b57f ""
+  "P1/img/tumodsimulasi1.png" 1747897598 45495 bc622b1f48955507776bfc6e807aa4d3 ""
+  "P1/img/tumodsimulasi2.png" 1747902771 48899 438858fd3890476d7448d907971bb7e5 ""
+  "P1/img/tumodsimulasi3.png" 1747902761 25725 ff10e399a9f8d846d3fa94af2fb4dafd ""
+  "P1/img/tumodsimulasip4.png" 1747902754 26430 eb9754b967507437d4ea038ba8faf6f9 ""
+  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P2/LA_2_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" 1748009028 2830 9756a10cdb44086ec52474f43acacf2c ""
   "miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
   "LA.aux"

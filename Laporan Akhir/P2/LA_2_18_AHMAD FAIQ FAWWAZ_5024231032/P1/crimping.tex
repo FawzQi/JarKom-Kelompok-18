@@ -77,37 +77,177 @@ Namun, pada saat implementasi \textbf{routing dinamis IPv6} menggunakan OSPFv3, 
 Kendala tersebut mengakibatkan OSPFv3 tidak berhasil membentuk hubungan \textit{neighbor} antar router, sehingga tidak terjadi pertukaran informasi routing. Hal ini dapat dibuktikan dari tidak munculnya rute dinamis di tabel \texttt{IPv6 > Routes} serta gagalnya \texttt{ping} antar LAN laptop. Meskipun demikian, praktikan memperoleh pemahaman yang lebih dalam mengenai prinsip dasar konfigurasi routing statis dan dinamika konfigurasi routing dinamis, serta pentingnya penyesuaian parameter dan pengecekan setiap langkah konfigurasi.
 
 \section{Hasil Tugas Modul}
-Berdasarkan tugas yang tercantum dalam modul, praktikan diminta untuk melakukan simulasi konfigurasi Routing Dinamis dan Statis IPv6 menggunakan perangkat lunak \textbf{GNS3}. Berikut adalah hasil simulasi:
+\subsection{Simulasi Routing Statis dan Dinamis IPv6 di Cisco}
 
-\subsection{Simulasi Routing Statis IPv6 di GNS3}
-Pada simulasi routing statis, dua router virtual (misalnya Cisco IOSv) dihubungkan satu sama lain serta ke masing-masing perangkat klien (VM atau host di GNS3). Setiap router dikonfigurasi dengan IP address IPv6 pada interface antar-router dan interface ke LAN, lalu ditambahkan rute statis menggunakan perintah seperti:
-\begin{verbatim}
-ipv6 route 2001:db8:b::/64 2001:db8:1::2
-\end{verbatim}
-Hasil simulasi menunjukkan bahwa \texttt{ping} dari host A ke host B berhasil, menandakan rute telah dikonfigurasi dengan benar.
+Pada percobaan ini dilakukan konfigurasi dua jenis routing, yaitu \textbf{routing statis} dan \textbf{routing dinamis (RIPng)} untuk jaringan IPv6 menggunakan perangkat Cisco pada Cisco Packet Tracer. Topologi terdiri dari dua router yang terhubung secara langsung, masing-masing terhubung ke dua jaringan IPv6 yang berbeda.
 
-\subsection{Simulasi Routing Dinamis IPv6 di GNS3 dengan OSPFv3}
-Untuk routing dinamis, protokol OSPFv3 digunakan dengan konfigurasi berikut:
-\begin{verbatim}
-ipv6 unicast-routing
-interface <interface>
- ipv6 enable
- ipv6 ospf 1 area 0
-router ospf 1
- router-id 1.1.1.1
-\end{verbatim}
-Langkah-langkah ini diterapkan pada kedua router dengan router ID yang berbeda. Setelah konfigurasi selesai, hasil pengujian menunjukkan bahwa rute dinamis berhasil terdeteksi di masing-masing router, dan \texttt{ping} antar host berhasil dilakukan. Neighbor OSPF juga terbentuk dengan baik, menunjukkan bahwa protokol routing dinamis bekerja sesuai teori.
+\subsubsection{Langkah-Langkah Routing Statis IPv6}
 
-\subsection{Kesimpulan Simulasi}
-Simulasi di GNS3 berhasil menunjukkan bahwa baik routing statis maupun dinamis IPv6 dapat dikonfigurasi dan berjalan dengan baik jika semua langkah dilakukan dengan tepat. Simulasi ini juga membantu praktikan memahami proses routing pada level protokol dan pengaruh konfigurasi antarmuka serta pengaturan OSPFv3 terhadap pembentukan jalur dinamis antar jaringan.
+\begin{enumerate}
+    \item \textbf{Konfigurasi IPv6 pada setiap interface router}
+    \begin{itemize}
+        \item Router 1:
+        \begin{verbatim}
+        interface g0/0
+        ipv6 address 2001:db8:1::1/64
+        no shutdown
+        
+        interface g0/1
+        ipv6 address 2001:db8:a::1/64
+        no shutdown
+        \end{verbatim}
 
-\section{Kesimpulan}
-Kesimpulan berisi ringkasan dari hasil praktikum dan hal-hal penting yang didapatkan. Bagian ini menjawab tujuan praktikum, mencantumkan hasil yang sesuai atau tidak sesuai dengan teori, serta pembelajaran yang diperoleh oleh praktikan.
+        \item Router 2:
+        \begin{verbatim}
+        interface g0/0
+        ipv6 address 2001:db8:1::2/64
+        no shutdown
 
+        interface g0/1
+        ipv6 address 2001:db8:b::1/64
+        no shutdown
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Aktifkan IPv6 routing pada masing-masing router}
+    \begin{verbatim}
+    ipv6 unicast-routing
+    \end{verbatim}
+
+    \item \textbf{Konfigurasikan routing statis pada masing-masing router}
+    \begin{itemize}
+        \item Router 1:
+        \begin{verbatim}
+        ipv6 route 2001:db8:b::/64 2001:db8:1::2
+        \end{verbatim}
+
+        \item Router 2:
+        \begin{verbatim}
+        ipv6 route 2001:db8:a::/64 2001:db8:1::1
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Konfigurasi alamat dan gateway pada PC}
+    \begin{itemize}
+        \item PC1: \texttt{IPv6: 2001:db8:a::100/64}, Gateway: \texttt{2001:db8:a::1}
+        \item PC2: \texttt{IPv6: 2001:db8:b::100/64}, Gateway: \texttt{2001:db8:b::1}
+    \end{itemize}
+
+    \item \textbf{Uji konektivitas} menggunakan perintah \texttt{ping} dari PC1 ke PC2.
+\end{enumerate}
+
+\subsubsection{Langkah-Langkah Routing Dinamis IPv6 dengan RIPng}
+
+\begin{enumerate}
+    \item \textbf{Aktifkan IPv6 routing dan RIPng pada router}
+    \begin{verbatim}
+    ipv6 unicast-routing
+    \end{verbatim}
+
+    \item \textbf{Konfigurasi interface untuk mengaktifkan RIPng}
+    \begin{itemize}
+        \item Router 1:
+        \begin{verbatim}
+        interface g0/0
+        ipv6 rip RIPng enable
+
+        interface g0/1
+        ipv6 rip RIPng enable
+        \end{verbatim}
+
+        \item Router 2:
+        \begin{verbatim}
+        interface g0/0
+        ipv6 rip RIPng enable
+
+        interface g0/1
+        ipv6 rip RIPng enable
+        \end{verbatim}
+    \end{itemize}
+
+    \item \textbf{Konfigurasikan nama proses RIPng (opsional)}
+    \begin{verbatim}
+    ipv6 router rip RIPng
+    \end{verbatim}
+
+    \item \textbf{Uji konektivitas} kembali menggunakan perintah \texttt{ping} dari PC1 ke PC2. Jika routing berhasil, paket akan berhasil dikirim meskipun tanpa konfigurasi route manual.
+\end{enumerate}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/tumodsimulasi.png}
+    \caption{Hasil simulasi}
+    \label{fig:hasil_routing_ipv6}
+    
+
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/tumodsimulasi1.png}
+    \caption{Hasil simulasi}
+    \label{fig:hasil_simulasi_ipv6}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/tumodsimulasi2.png}
+    \caption{Hasil simulasi}
+    \label{fig:hasil_routing_dinamis_ipv6}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/tumodsimulasi3.png}
+    \caption{Hasil simulasi}
+    \label{fig:hasil_uji_dinamis_ipv6}
+
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/tumodsimulasip4.png}
+    \caption{Hasil simulasi}
+    \label{fig:hasil_routing_dinamis_ipv6_2}
+\end{figure}
+
+
+\section{Kesimpulan}Praktikum ini berhasil mendemonstrasikan implementasi routing statis IPv6, di mana konektivitas antar laptop yang terhubung ke router berbeda berhasil tercapai setelah konfigurasi alamat IP, gateway, dan rute statis dilakukan secara manual. Hal ini membuktikan bahwa pendekatan routing statis efektif untuk skenario jaringan yang telah ditentukan.
+
+Di sisi lain, upaya untuk mengkonfigurasi routing dinamis IPv6 menggunakan OSPFv3 selama sesi praktikum di laboratorium mengalami kegagalan. Kendala ini, yang kemungkinan disebabkan oleh kesalahan dalam pengaturan instance OSPF, pemilihan interface, potensi masalah pada perangkat keras router, atau kurangnya pemahaman praktikan, mengakibatkan router tidak dapat membentuk hubungan neighbor dan bertukar informasi routing. Akibatnya, rute dinamis tidak muncul dan konektivitas antar jaringan lokal (LAN) tidak terwujud.
+
+Namun, sebagai pelengkap, simulasi routing IPv6, baik statis maupun dinamis menggunakan RIPng, berhasil dilakukan melalui Cisco Packet Tracer. Ini memberikan wawasan tambahan mengenai konfigurasi dan operasional protokol routing dinamis dalam lingkungan yang terkontrol.
+
+Secara keseluruhan, praktikum ini memberikan pemahaman praktis mengenai konfigurasi routing statis IPv6 yang sukses dan menyoroti tantangan serta kompleksitas dalam implementasi routing dinamis seperti OSPFv3 di lingkungan nyata. Pentingnya ketelitian dalam setiap langkah konfigurasi, pemahaman parameter protokol, dan kemampuan troubleshooting menjadi pembelajaran utama dari percobaan ini.
 \section{Lampiran}
 \subsection{Dokumentasi saat praktikum}
-Menampilkan foto selama pelaksanaan praktikum. Dokumentasi meliputi foto alat yng digunakan dan foto praktikan saat praktikum. Tujuannya sebagai bukti telah dilakukan kegiatan praktikum.
-
-\subsection{Hasil Challenge Modul}
-Memuat hasil dari challenge modul saat praktikum (jika berhasil mengerjakan challenge) serta penjelasan lengkap dari hasil tersebut. 
-\textcolor{red}{Jika kelompok praktikum tidak berhasil mengerjakan challenge modul, maka sub section ini dapat dihapus.}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/dokum1.png}
+    \caption{Lampiran}
+    \label{fig:hasil_routing_dinamis_ipv6_3}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/dokum2.png}
+    \caption{Lampiran}
+    \label{fig:hasil_routing_dinamis_ipv6_4}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/dokum3.png}
+    \caption{Lampiran}
+    \label{fig:hasil_routing_dinamis_ipv6_5}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/dokum4.png}
+    \caption{Lampiran}
+    \label{fig:hasil_routing_dinamis_ipv6_6}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{P1/img/dokum5.png}
+    \caption{Lampiran}
+    \label{fig:hasil_routing_dinamis_ipv6_7}
+\end{figure}

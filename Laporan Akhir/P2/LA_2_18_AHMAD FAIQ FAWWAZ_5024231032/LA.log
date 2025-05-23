@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  19 MAY 2025 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  23 MAY 2025 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,7 +751,7 @@ File: Cover/img/miot.png Graphic file (type png)
 <use Cover/img/miot.png>
 Package pdftex.def Info: Cover/img/miot.png  used on input line 20.
 (pdftex.def)             Requested size: 85.35826pt x 85.35896pt.
-<Cover/img/footer.png, id=54, 904.88063pt x 89.58469pt>
+<Cover/img/footer.png, id=50, 904.88063pt x 89.58469pt>
 File: Cover/img/footer.png Graphic file (type png)
 <use Cover/img/footer.png>
 Package pdftex.def Info: Cover/img/footer.png  used on input line 35.
@@ -773,7 +773,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.45         \item
                    Name: \texttt{ospf-instance}
-<miot.png, id=66, 200.75pt x 200.75pt>
+<miot.png, id=62, 200.75pt x 200.75pt>
 File: miot.png Graphic file (type png)
 <use miot.png>
 Package pdftex.def Info: miot.png  used on input line 45.
@@ -785,29 +785,81 @@ Overfull \hbox (3.36873pt too wide) in paragraph at lines 74--75
 []\T1/qhv/m/n/10.95 Kurangnya pe-ma-ham-an prak-tik-an da-lam me-nye-su-a-ik-an pa-ra-me-ter ro-u-ting di-na-mis de-ngan struk-
  []
 
-[2] [3]) [4] (LA.aux)
+[2] [3]
+<P1/img/tumodsimulasi.png, id=97, 516.42938pt x 512.66531pt>
+File: P1/img/tumodsimulasi.png Graphic file (type png)
+<use P1/img/tumodsimulasi.png>
+Package pdftex.def Info: P1/img/tumodsimulasi.png  used on input line 177.
+(pdftex.def)             Requested size: 386.95897pt x 384.15384pt.
+<P1/img/tumodsimulasi1.png, id=98, 871.75688pt x 399.74344pt>
+File: P1/img/tumodsimulasi1.png Graphic file (type png)
+<use P1/img/tumodsimulasi1.png>
+Package pdftex.def Info: P1/img/tumodsimulasi1.png  used on input line 187.
+(pdftex.def)             Requested size: 386.95897pt x 177.43694pt.
+<P1/img/tumodsimulasi2.png, id=99, 502.12593pt x 511.9125pt>
+File: P1/img/tumodsimulasi2.png Graphic file (type png)
+<use P1/img/tumodsimulasi2.png>
+Package pdftex.def Info: P1/img/tumodsimulasi2.png  used on input line 194.
+(pdftex.def)             Requested size: 386.95897pt x 394.51753pt.
+<P1/img/tumodsimulasi3.png, id=100, 507.39563pt x 484.05844pt>
+File: P1/img/tumodsimulasi3.png Graphic file (type png)
+<use P1/img/tumodsimulasi3.png>
+Package pdftex.def Info: P1/img/tumodsimulasi3.png  used on input line 201.
+(pdftex.def)             Requested size: 386.95897pt x 369.17342pt.
+<P1/img/tumodsimulasip4.png, id=101, 506.6428pt x 509.65407pt>
+File: P1/img/tumodsimulasip4.png Graphic file (type png)
+<use P1/img/tumodsimulasip4.png>
+Package pdftex.def Info: P1/img/tumodsimulasip4.png  used on input line 209.
+(pdftex.def)             Requested size: 386.95897pt x 389.26973pt.
+ [4] [5 <./P1/img/tumodsimulasi.png> <./P1/img/tumodsimulasi1.png>] [6 <./P1/img/tumodsimulasi2.png>] [7 <./P1/img/tumodsimulasi3.png>] [8 <./P1/img/tumodsimulasip4.png>]
+<P1/img/dokum1.png, id=139, 578.91281pt x 425.33907pt>
+File: P1/img/dokum1.png Graphic file (type png)
+<use P1/img/dokum1.png>
+Package pdftex.def Info: P1/img/dokum1.png  used on input line 226.
+(pdftex.def)             Requested size: 386.95897pt x 284.30719pt.
+<P1/img/dokum2.png, id=140, 578.16pt x 411.03563pt>
+File: P1/img/dokum2.png Graphic file (type png)
+<use P1/img/dokum2.png>
+Package pdftex.def Info: P1/img/dokum2.png  used on input line 232.
+(pdftex.def)             Requested size: 386.95897pt x 275.10393pt.
+<P1/img/dokum3.png, id=141, 649.67719pt x 462.97969pt>
+File: P1/img/dokum3.png Graphic file (type png)
+<use P1/img/dokum3.png>
+Package pdftex.def Info: P1/img/dokum3.png  used on input line 238.
+(pdftex.def)             Requested size: 386.95897pt x 275.76244pt.
+<P1/img/dokum4.png, id=142, 484.81125pt x 292.84406pt>
+File: P1/img/dokum4.png Graphic file (type png)
+<use P1/img/dokum4.png>
+Package pdftex.def Info: P1/img/dokum4.png  used on input line 244.
+(pdftex.def)             Requested size: 386.95897pt x 233.74828pt.
+<P1/img/dokum5.png, id=143, 611.28375pt x 387.69844pt>
+File: P1/img/dokum5.png Graphic file (type png)
+<use P1/img/dokum5.png>
+Package pdftex.def Info: P1/img/dokum5.png  used on input line 250.
+(pdftex.def)             Requested size: 386.95897pt x 245.42262pt.
+) [9 <./P1/img/dokum1.png>] [10 <./P1/img/dokum2.png> <./P1/img/dokum3.png>] [11 <./P1/img/dokum4.png> <./P1/img/dokum5.png>] (LA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
 Package rerunfilecheck Info: File `LA.out' has not changed.
-(rerunfilecheck)             Checksum: 4B13BA909B820615A5129F578DBB3ABB;2019.
+(rerunfilecheck)             Checksum: BEBDBA2ECDF5EFA84F1F370F8272CDF7;2011.
 Package logreq Info: Writing requests to 'LA.run.xml'.
 \openout1 = `LA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21431 strings out of 474370
- 375255 string characters out of 5739119
- 1938754 words of memory out of 5000000
- 43526 multiletter control sequences out of 15000+600000
- 601767 words of font info for 64 fonts, out of 8000000 for 9000
+ 21543 strings out of 474370
+ 377950 string characters out of 5739119
+ 1941754 words of memory out of 5000000
+ 43613 multiletter control sequences out of 15000+600000
+ 604764 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,81p,1239b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,81p,1239b,845s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on LA.pdf (5 pages, 185438 bytes).
+Output written on LA.pdf (12 pages, 419945 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 247 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
