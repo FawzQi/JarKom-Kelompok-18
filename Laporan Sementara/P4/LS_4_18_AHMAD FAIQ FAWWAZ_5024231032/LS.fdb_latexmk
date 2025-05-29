@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LS"] 1748510306.12534 "LS.bcf" "LS.bbl" "LS" 1748511577.2063 0
-  "LS.bcf" 1748511577 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LS"] 1748510306.12534 "LS.bcf" "LS.bbl" "LS" 1748511736.35377 0
+  "LS.bcf" 1748511736 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LS.bbl"
   "LS.blg"
   (rewritten before read)
-["pdflatex"] 1748511575.74179 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P4/LS_4_18_AHMAD FAIQ FAWWAZ_5024231032/LS.tex" "LS.pdf" "LS" 1748511577.2069 0
+["pdflatex"] 1748511734.84612 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P4/LS_4_18_AHMAD FAIQ FAWWAZ_5024231032/LS.tex" "LS.pdf" "LS" 1748511736.35437 0
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1747529242 124670 95f85dbf99ed9a1d38df8b5df5571d53 ""
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1716438020 24241770 e23d51d3d015ea48e33d81e880041b4c ""
   "C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -133,13 +133,13 @@
   "Cover/img/footer.png" 1746453791 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746453791 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LS.aux" 1748511577 913 722e8c99821a59622b9467e4e5f35986 "pdflatex"
+  "LS.aux" 1748511736 913 722e8c99821a59622b9467e4e5f35986 "pdflatex"
   "LS.bbl" 1748510307 0 d41d8cd98f00b204e9800998ecf8427e "biber LS"
-  "LS.out" 1748511577 460 840c436be5b2f37476037fe32140f673 "pdflatex"
-  "LS.run.xml" 1748511577 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
-  "LS.tex" 1746453791 2830 8b4d5c69666182c85915b949dfce2e08 ""
-  "P1/crimping.tex" 1748511573 7058 c0779bea04b6895420d092704e4f4ab9 ""
-  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P4/LS_4_18_AHMAD FAIQ FAWWAZ_5024231032/LS.tex" 1746453791 2830 8b4d5c69666182c85915b949dfce2e08 ""
+  "LS.out" 1748511736 460 840c436be5b2f37476037fe32140f673 "pdflatex"
+  "LS.run.xml" 1748511736 2276 5bc9e8b1d4efc964f3aa5d1a3b0faa42 "pdflatex"
+  "LS.tex" 1748511736 2824 09ee787656239f62d94aac45b3575a10 ""
+  "P1/crimping.tex" 1748511585 7058 c0779bea04b6895420d092704e4f4ab9 ""
+  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Sementara/P4/LS_4_18_AHMAD FAIQ FAWWAZ_5024231032/LS.tex" 1748511736 2824 09ee787656239f62d94aac45b3575a10 ""
   "miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
   "LS.aux"
