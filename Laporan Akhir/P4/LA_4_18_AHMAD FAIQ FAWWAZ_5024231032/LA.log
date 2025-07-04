@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  3 JUL 2025 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.23)  4 JUL 2025 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -797,7 +797,29 @@ File: P1/img/1.png Graphic file (type png)
 <use P1/img/1.png>
 Package pdftex.def Info: P1/img/1.png  used on input line 205.
 (pdftex.def)             Requested size: 386.95897pt x 45.37718pt.
- [5 <./P1/img/2.png> <./P1/img/1.png>]) [6] (LA.aux)
+ [5 <./P1/img/2.png> <./P1/img/1.png>]
+<P1/img/5.png, id=141, 452.4403pt x 216.81pt>
+File: P1/img/5.png Graphic file (type png)
+<use P1/img/5.png>
+Package pdftex.def Info: P1/img/5.png  used on input line 221.
+(pdftex.def)             Requested size: 386.95897pt x 185.43071pt.
+<P1/img/6.png, id=142, 701.62125pt x 749.80125pt>
+File: P1/img/6.png Graphic file (type png)
+<use P1/img/6.png>
+Package pdftex.def Info: P1/img/6.png  used on input line 226.
+(pdftex.def)             Requested size: 386.95897pt x 413.53607pt.
+ [6 <./P1/img/5.png>]
+<P1/img/8.png, id=150, 695.59875pt x 759.58781pt>
+File: P1/img/8.png Graphic file (type png)
+<use P1/img/8.png>
+Package pdftex.def Info: P1/img/8.png  used on input line 236.
+(pdftex.def)             Requested size: 386.95897pt x 422.54982pt.
+<P1/img/9.png, id=151, 703.12688pt x 753.5653pt>
+File: P1/img/9.png Graphic file (type png)
+<use P1/img/9.png>
+Package pdftex.def Info: P1/img/9.png  used on input line 241.
+(pdftex.def)             Requested size: 386.95897pt x 414.71516pt.
+ [7 <./P1/img/6.png>]) [8 <./P1/img/8.png>] [9 <./P1/img/9.png>] (LA.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
@@ -809,17 +831,17 @@ Package logreq Info: Writing requests to 'LA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21756 strings out of 474370
- 378320 string characters out of 5739119
+ 21791 strings out of 474370
+ 378930 string characters out of 5739119
  2159754 words of memory out of 5000000
- 43813 multiletter control sequences out of 15000+600000
+ 43841 multiletter control sequences out of 15000+600000
  608074 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,81p,1239b,1977s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\MSI-GF63\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvbi.pfb><C:/Users/MSI-GF63/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on LA.pdf (7 pages, 226944 bytes).
+Output written on LA.pdf (10 pages, 547325 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 327 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

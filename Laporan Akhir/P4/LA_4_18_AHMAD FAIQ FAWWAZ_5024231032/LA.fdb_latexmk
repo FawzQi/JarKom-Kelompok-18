@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber LA"] 1751452848.73121 "LA.bcf" "LA.bbl" "LA" 1751522681.31244 0
-  "LA.bcf" 1751522681 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
+["biber LA"] 1751452848.73121 "LA.bcf" "LA.bbl" "LA" 1751639853.34894 0
+  "LA.bcf" 1751639853 107438 de200c6f14820d1c3c066ecaf56bf23c "pdflatex"
   (generated)
   "LA.bbl"
   "LA.blg"
   (rewritten before read)
-["pdflatex"] 1751522679.79623 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P4/LA_4_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" "LA.pdf" "LA" 1751522681.31308 0
+["pdflatex"] 1751639851.63288 "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P4/LA_4_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" "LA.pdf" "LA" 1751639853.34962 0
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1747529242 124670 95f85dbf99ed9a1d38df8b5df5571d53 ""
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0900.pk" 1727095177 17512 4db48b4d968742296e8129d98714bac8 ""
   "C:/Users/MSI-GF63/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1727095178 21972 311e84e3e5ce951679442902496ea6c1 ""
@@ -138,16 +138,20 @@
   "Cover/img/footer.png" 1746453791 28618 7e563268718746d34d6e0293ee851b55 ""
   "Cover/img/logodepart.png" 1746453791 37002 0f7871c228b1de42912bcfe0dae05fc4 ""
   "Cover/img/miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
-  "LA.aux" 1751522681 1662 d3236e22eaa66ea1d4d6feb775e32805 "pdflatex"
+  "LA.aux" 1751639853 1663 964222e2971f1ca3170c7393c5fb3e8e "pdflatex"
   "LA.bbl" 1751452850 0 d41d8cd98f00b204e9800998ecf8427e "biber LA"
-  "LA.out" 1751522681 1603 8c5fc506040cc4faba8814a6cbbb39f0 "pdflatex"
-  "LA.run.xml" 1751522681 2276 7e7737baf1ca4036fb9a56342306cac1 "pdflatex"
-  "LA.tex" 1751522678 2820 d449579079d812e3ccb69d0173eef7bc ""
-  "P1/crimping.tex" 1751522593 11325 a3a1f861ba91160901d44b3eaf93e62e ""
+  "LA.out" 1751639853 1603 8c5fc506040cc4faba8814a6cbbb39f0 "pdflatex"
+  "LA.run.xml" 1751639853 2276 7e7737baf1ca4036fb9a56342306cac1 "pdflatex"
+  "LA.tex" 1751522686 2820 d449579079d812e3ccb69d0173eef7bc ""
+  "P1/crimping.tex" 1751639851 11858 27cdf41bad442c9b04cccc0f63148a9b ""
   "P1/img/1.png" 1751376383 10790 2ac807e9acc113cfd2d96935c40ba15f ""
   "P1/img/2.png" 1751376715 9853 334a905a2736730ebf6095e0ef152656 ""
   "P1/img/3.png" 1751376993 13178 6818f2ba0de426e40596e5e611e08921 ""
-  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P4/LA_4_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" 1751522678 2820 d449579079d812e3ccb69d0173eef7bc ""
+  "P1/img/5.png" 1751637620 17606 8034c2a3d7af38536814008855ce12f1 ""
+  "P1/img/6.png" 1751637622 53764 59b11022b78fcb0050b92e5e5f0dc7b3 ""
+  "P1/img/8.png" 1751637627 48598 face4b9fefe44c258ebff367252efdc7 ""
+  "P1/img/9.png" 1751637631 258397 2e8aee1c9f60ca10ce60d6cc17bc0a08 ""
+  "e:/Kuliah/JarKom/JarKom-Kelompok-18/Laporan Akhir/P4/LA_4_18_AHMAD FAIQ FAWWAZ_5024231032/LA.tex" 1751522686 2820 d449579079d812e3ccb69d0173eef7bc ""
   "miot.png" 1746453791 13325 9f73d680988fc58aae95c8b21181dad3 ""
   (generated)
   "LA.aux"
